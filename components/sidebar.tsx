@@ -91,11 +91,11 @@ export default function Sidebar({ onLogout }: SidebarProps) {
   return (
     <>
       {/* Mobile Sidebar Toggle Button */}
-      <div className="fixed top-4 left-4 z-50 lg:hidden">
+      <div className="fixed top-4 left-4 z-50 lg:hidden bg-white/80 backdrop-blur-sm rounded-md shadow-md">
         <Button
-          variant="outline"
+          variant="ghost"
           size="icon"
-          className="bg-white shadow-md border-gray-200"
+          className="h-10 w-10"
           onClick={() => setIsMobileSidebarOpen(!isMobileSidebarOpen)}
         >
           {isMobileSidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
